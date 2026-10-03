@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio de Ricardo Ávila
 
-## Getting Started
+Portfolio personal de Ricardo Ávila, Software Engineer. El sitio presenta su perfil profesional, experiencia, tecnologías y formas de contacto. También incluye una sección para mostrar proyectos personales, que se irá actualizando a medida que estén disponibles.
 
-First, run the development server:
+## Contenido
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Presentación y resumen profesional.
+- Experiencia como Software Engineer en Blue Room Innovation.
+- Tecnologías organizadas por áreas: frontend, backend y herramientas.
+- Sección de proyectos personales.
+- Enlaces de contacto por correo electrónico y LinkedIn.
+
+## Tecnologías
+
+- [Next.js](https://nextjs.org/) 16 con App Router
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [Geist](https://vercel.com/font), mediante `next/font`
+
+## Requisitos
+
+- Node.js compatible con Next.js 16
+- npm
+
+## Desarrollo local
+
+1. Clona el repositorio y entra en la carpeta del proyecto.
+2. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicia el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abre [http://localhost:3000](http://localhost:3000).
+
+## Scripts disponibles
+
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia Next.js en modo desarrollo. |
+| `npm run build` | Genera la compilación de producción. |
+| `npm run start` | Sirve la compilación de producción. |
+| `npm run lint` | Analiza el código con ESLint. |
+
+## Estructura del proyecto
+
+```text
+src/
+├── app/
+│   ├── globals.css    # Estilos globales
+│   ├── layout.tsx     # Layout raíz y metadatos
+│   └── page.tsx       # Página principal del portfolio
+└── components/        # Secciones y navegación del sitio
+    ├── About.tsx
+    ├── Contact.tsx
+    ├── Experience.tsx
+    ├── Footer.tsx
+    ├── Hero.tsx
+    ├── Navbar.tsx
+    ├── Projects.tsx
+    └── Skills.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El contenido de perfil, experiencia y tecnologías se mantiene directamente en los componentes de `src/components/`. La página principal compone esas secciones desde `src/app/page.tsx`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Despliegue
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Se puede desplegar en [Vercel](https://vercel.com/), que ofrece integración directa con Next.js. También es posible generar la compilación con `npm run build` y servirla con `npm run start` en un entorno compatible.
 
-## Learn More
+## Contacto
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: [ricard_995@hotmail.com](mailto:ricard_995@hotmail.com)
+- LinkedIn: [linkedin.com/in/ricardoavila95](https://www.linkedin.com/in/ricardoavila95)
