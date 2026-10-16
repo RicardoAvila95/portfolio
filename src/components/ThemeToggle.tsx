@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
+import { useI18n } from "@/i18n/I18nProvider";
 
 const subscribe = (onChange: () => void) => {
   window.addEventListener("storage", onChange);
@@ -18,6 +19,7 @@ const getSnapshot = () =>
 const getServerSnapshot = () => "dark";
 
 export default function ThemeToggle() {
+  const { t } = useI18n();
   const theme = useSyncExternalStore(
     subscribe,
     getSnapshot,
@@ -38,7 +40,7 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      aria-label={theme === "dark" ? t("themeLight") : t("themeDark")}
       aria-pressed={theme === "light"}
       className="rounded-full border border-[var(--border)] p-2 text-[var(--muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
     >

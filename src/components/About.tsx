@@ -1,28 +1,29 @@
+"use client";
+
+import { useI18n } from "@/i18n/I18nProvider";
+
 export default function About() {
+  const { t } = useI18n();
   return (
     <section id="about" className="border-t border-[var(--border)] px-6 py-24">
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_2fr]">
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.25em] text-[var(--accent)]">
-            About me
+            {t("aboutTitle")}
           </p>
         </div>
 
         <div className="max-w-3xl space-y-6 text-lg leading-8 text-[var(--muted)]">
           <p>
-            I'm a Software Engineer with professional experience developing
-            web and mobile applications.
+            {t("aboutOne")}
           </p>
 
           <p>
-            My main experience is with TypeScript, React, React Native and
-            Node.js, working on both frontend and backend applications.
+            {t("aboutTwo")}
           </p>
 
           <p>
-            I'm currently expanding my frontend knowledge with Next.js and
-            building personal projects to continue learning and improving my
-            skills.
+            {t("aboutThree")}
           </p>
         </div>
       </div>
