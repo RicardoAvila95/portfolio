@@ -1,16 +1,18 @@
 import Link from "next/link";
+import ProfileImage from "./ProfileImage";
 
 export default function Hero() {
   return (
     <section className="flex min-h-screen items-center px-6 pt-16">
       <div className="mx-auto w-full max-w-6xl">
         <div className="max-w-3xl">
+          <ProfileImage />
           <p className="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-[var(--accent)]">
             Software Engineer
           </p>
 
           <h1 className="text-5xl font-bold tracking-tight text-[var(--foreground)] sm:text-6xl md:text-7xl">
-            Hi, I'm Ricardo.
+            Hi, I'm Ricardo Avila.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-xl">

@@ -1,7 +1,7 @@
 const skills = {
   Frontend: ["React", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
   Backend: ["Node.js", "Express", "REST APIs", "MongoDB", "Python", "Moleculer", "Redis"],
-  Tools: ["Git", "Docker", "RabbitMQ", "Azure DevOps", "Postman", "OpenSSH", "Grafana", "Prometheus", "Llama.cpp"],
+  Tools: ["Git", "Docker", "RabbitMQ", "Azure DevOps", "Postman", "OpenSSH", "Grafana", "Prometheus", "Llama.cpp", "LangGraph"],
 };
 
 export default function Skills() {
